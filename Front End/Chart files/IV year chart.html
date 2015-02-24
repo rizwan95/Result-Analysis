@@ -1,0 +1,24 @@
+<html>
+<head>
+<title>My First chart using FusionCharts Suite XT</title>
+<script type="text/javascript" src="fusioncharts/fusioncharts.js"></script>
+<script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fint.js"></script>
+<script type="text/javascript">
+FusionCharts.ready(function () {
+    var myChart = new FusionCharts({
+      "type": "column2d",
+      "renderAt": "chartContainer",
+      "width": "500",
+      "height": "300",
+      "dataFormat": "xml",
+      "dataSource": "<chart caption='IV year CSE' subcaption='Complete review of IV year CSE' xaxisname='Subject' yaxisname='No. of failures' numberprefix='' palettecolors='#008ee4' bgalpha='0' borderalpha='20' canvasborderalpha='0' theme='fint' useplotgradientcolor='0' plotborderalpha='10' placevaluesinside='1' rotatevalues='1' valuefontcolor='#ffffff' captionpadding='20' showaxislines='1' axislinealpha='25' divlinealpha='10'><set label='CS2401' value='28' /><set label='CS2402' value='48' /><set label='CS2403' value='21' /><set label='CS2405' value='15' /><set label='CS2406' value='25' /><set label='GE2022' value='8' /><set label='IT2024' value='0' /><set label='MG2452' value='0' /></chart>"
+    });
+
+  myChart.render();
+});
+</script>
+</head>
+<body>
+  <div id="chartContainer">FusionCharts XT will load here!</div>
+</body>
+</html>
